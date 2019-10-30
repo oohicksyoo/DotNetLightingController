@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netcorelighting", "netcorelighting\netcorelighting.csproj", "{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Linux-Debug|Any CPU = Linux-Debug|Any CPU
+		Linux-Release|Any CPU = Linux-Release|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Windows-Debug|Any CPU = Windows-Debug|Any CPU
+		Windows-Release|Any CPU = Windows-Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Linux-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Linux-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Linux-Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Linux-Release|Any CPU.Build.0 = Release|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Windows-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Windows-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Windows-Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C739F83-63F3-4C5B-BB7C-83E219EDF63E}.Windows-Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {728D92F4-A287-4957-AEAB-39A8D9EDDC58}
+	EndGlobalSection
+EndGlobal
