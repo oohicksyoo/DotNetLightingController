@@ -24,6 +24,7 @@ namespace netcorelighting {
             List<IAnimation> animations = new List<IAnimation>() {
                 new MatrixCornerAnimation(),
                 new EyeFadeInAnimation(),
+                new EyeFadeOutAnimation(),
                 new MatrixCornerAnimation()
             };
 
