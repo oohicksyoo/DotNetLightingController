@@ -13,6 +13,15 @@ namespace netcorelighting.LightingController {
 
     public class Matrix {
 
+        public float Brightness {
+            get {
+                return brightness;
+            }
+            set {
+                brightness = value;
+            }
+        }
+
         public int Width {
             get;
             private set;
@@ -37,6 +46,7 @@ namespace netcorelighting.LightingController {
 
         private Color[] leds;
         private MatrixType matrixType;
+        private float brightness = 1;
 
         public Matrix(int width, int height, MatrixType type = MatrixType.Normal) {
             Width = width;
@@ -74,10 +84,14 @@ namespace netcorelighting.LightingController {
             return x + (int)Width * y;
         }
 
-        private void DefaultColours() {
+        public void ColourAll(Color color) {
             for (int i = 0; i < leds.Length; i++) {
-                leds[i] = Color.Black;
+                leds[i] = color;
             }
+        }
+
+        private void DefaultColours() {
+            ColourAll(Color.Black);
         }
     }
 }

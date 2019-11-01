@@ -1,5 +1,6 @@
 ﻿using Iot.Device.Graphics;
 using Iot.Device.Ws28xx;
+using netcorelighting.Utility;
 using System;
 using System.Collections.Generic;
 using System.Device.Spi;
@@ -57,7 +58,7 @@ namespace netcorelighting.LightingController {
                 var colArray = matrix.Colours;
 
                 for (int i = 0; i < colArray.Length; i++) {
-                    image.SetPixel(i + currentCount, 0, colArray[i]);
+                    image.SetPixel(i + currentCount, 0, colArray[i].SetBrightness(matrix.Brightness));
                 }
 
                 currentCount += matrix.TotalLedCount;
@@ -70,13 +71,10 @@ namespace netcorelighting.LightingController {
         }
 
         public void ColourAll(Color color) {
-
-            Color c = Color.FromArgb(1, color.R, color.G, color.B);
-
-            for (int i = 0; i < totalLedCount; i++) {
-                image.SetPixel(i, 0, c);
+            foreach (var matrix in matrices) {
+                matrix.ColourAll(color);
             }
-            PushUpdate();
+            UpdateMatrices();
         }
     }
 }
